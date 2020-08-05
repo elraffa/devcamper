@@ -9,14 +9,14 @@ dotenv.config({ path: './config/config.env' });
 // Load models
 const Bootcamp = require('./models/Bootcamp');
 const Course = require('./models/Course');
-const User = require('./models/User');
+const User = require('./models/User');V
 const Review = require('./models/Review');
 
 // Connect to database
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: true,
+  useFindAndModify: true
   useCreateIndex: true,
 });
 
